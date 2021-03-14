@@ -5,6 +5,7 @@
 * Coins cannot be destroyed or minted. It's just not computationally plausible.
 * While this is an ERC20 token, decimals are negligible for obvious reasons.
 * ```./contracts/SafeMath.sol``` was taken from the <a href="https://openzeppelin.com/contracts/">OpenZeppelin</a> contracts library.
+* Function names are taken after those of the equilvalent functions in <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol">@OpenZeppelin/contracts/contracts/token/ERC20/ERC20.sol</a>
 
 Not sure what I want to do with this... yet...<br />
 
