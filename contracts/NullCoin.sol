@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// All methods are named the same as the equivalent functions in @OpenZeppelin/contracts/token/ERC20/ERC20.sol
 
 pragma solidity ^0.8.0;
 
@@ -65,4 +66,17 @@ contract NullCoin {
     }
 
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) { return allowed[_owner][_spender]; }
+
+    function increaseAllowance(address _owner, address _spender, uint256 _increaseValue) public returns (bool success) {
+        (, allowed[_owner][_spender]) = allowed[_owner][_spender].tryAdd(_increaseValue);
+        return true;
+    }
+
+    function decreaseAllowance(address _owner, address _spender, uint256 _decreaseValue) public returns (bool success) {
+        (bool _success, uint256 _decreasedValue) = allowed[_owner][_spender].trySub(_decreaseValue);
+        if(_success) {
+            allowed[_owner][_spender] = _decreasedValue;
+        }
+        return _success;
+    }
 }
