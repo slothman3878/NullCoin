@@ -12,7 +12,6 @@ contract NullCoin {
 
     string private _name;
     string private _symbol;
-    //private uint8 _decimals;
     uint256 private _totalSupply;
 
     mapping(address => uint256) private balances;
@@ -21,9 +20,9 @@ contract NullCoin {
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
-    constructor() {
-        _name = "Null Coin";
-        _symbol = "ENC";
+    constructor(string memory name, string memory symbol) {
+        _name = name;
+        _symbol = symbol;
         _totalSupply = MAX_INT;
 
         balances[msg.sender] = _totalSupply;

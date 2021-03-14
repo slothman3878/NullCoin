@@ -1,3 +1,4 @@
 test/
-migrations/
+migrations/1_initial_migration.js
+contracts/Migrations.sol
 build/

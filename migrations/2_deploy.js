@@ -1,7 +1,6 @@
-//const SafeMath = artifacts.require("SafeMath");
 const NullCoin = artifacts.require("NullCoin");
 
+// Change values of "Null Coin" and "ENC" to whatever you please.
 module.exports = function (deployer) {
-  //deployer.deploy(SafeMath);
   deployer.deploy(NullCoin, "Null Coin", "ENC");
 };
