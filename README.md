@@ -1,7 +1,7 @@
 # NullCoin
 
 **A virtually worthless ERC20 token.**
-* There are exactly $2^{256} - 1$ coins &#8212; maximum uint256 &#8212; in "circulation".
+* There are exactly $2^{256} - 1$ coins &ndash; maximum uint256 &ndash; in "circulation".
 * Coins cannot be destroyed or minted.
 
 Not sure what I want to do with this... yet...
