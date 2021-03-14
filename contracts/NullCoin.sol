@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// All methods are named the same as the equivalent functions in @OpenZeppelin/contracts/token/ERC20/ERC20.sol
+// All methods are named after the equivalent functions in @OpenZeppelin/contracts/token/ERC20/ERC20.sol
 
 pragma solidity ^0.8.0;
 
