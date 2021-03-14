@@ -15,7 +15,7 @@ Not sure what I want to do with this... yet...<br />
     $ npm install -g truffle
     $ truffle init
     ```
-2. Copy paste ```./contracts``` from repo into directory.
+2. Copy paste repo files into directory where truffle was initated.
 3. Run the following to deploy the contracts to the local Truffle network.
    ```
    $ truffle develop
