@@ -24,3 +24,12 @@ Not sure what I want to do with this... yet...<br />
    > compile
    > migrate
    ```
+4. Test away.
+5. Miscellaneous commands for ```truffle(develop)``` that are useful.
+   - Instance of contract
+       ```
+       > enc = await NullCoin.deployed()
+       ```
+   - Getting an array of the truffle test accounts
+       ```
+       > let accounts = await web3.eth.getAccounts()
