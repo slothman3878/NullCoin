@@ -5,3 +5,8 @@
 * Coins cannot be destroyed or minted.
 
 Not sure what I want to do with this... yet...
+
+## Usage
+
+1. Install <a href="https://www.trufflesuite.com/">Truffle</a>
+    npm install -g truffle
